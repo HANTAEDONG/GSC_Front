@@ -1,0 +1,110 @@
+.frame {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.frame .div {
+    background-color: #ffffff;
+    height: 1024px;
+    position: relative;
+    width: 1440px;
+}
+
+.frame .text-wrapper {
+    color: #272731;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 50px;
+    font-weight: 700;
+    left: 520px;
+    letter-spacing: 0;
+    line-height: 65px;
+    position: absolute;
+    top: 284px;
+}
+
+.frame .div-wrapper {
+    align-items: center;
+    background-color: #ff5e68;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+    left: 520px;
+    padding: 14px 0px;
+    position: absolute;
+    top: 469px;
+    width: 410px;
+}
+
+.frame .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.frame .overlap-group {
+    border-radius: 8px;
+    height: 60px;
+    left: 520px;
+    position: absolute;
+    top: 542px;
+    width: 410px;
+}
+
+.frame .frame-wrapper {
+    align-items: center;
+    background-color: #fee500;
+    border: 1px solid;
+    border-color: #e8e9ea;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    justify-content: center;
+    left: 0;
+    padding: 14px 0px;
+    position: absolute;
+    top: 0;
+    width: 410px;
+}
+
+.frame .div-wrapper-2 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    justify-content: center;
+    position: relative;
+}
+
+.frame .text-wrapper-3 {
+    color: #000000e6;
+    font-family: "Arial-Bold", Helvetica;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.frame .image {
+    height: 32px;
+    left: 104px;
+    position: absolute;
+    top: 14px;
+    width: 32px;
+}
