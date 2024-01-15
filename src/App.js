@@ -6,13 +6,16 @@ import Question from './screens/Question';
 import ReactDoc from './screens/ReactDoc';
 import NavbarElements from './components/NavBarElements';
 import Login from './screens/LoginScreen';
-import SocialKakao from './components/SocialKakao';
+import LoginHandeler from './components/LoginHandeler';
+import { KAKAO_AUTH_URL } from './components/Oauth';
 
 function App() {
   return (
     <div className='app'>
       <NavbarElements />
-      <SocialKakao />
+      <a href={KAKAO_AUTH_URL} className="kakaobtn">
+        <img src={process.env.PUBLIC_URL + `assets/kakaologin.png`} />
+      </a>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -20,6 +23,10 @@ function App() {
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Question" element={<Question />} />
           <Route path="/ReactDoc" element={<ReactDoc />} />
+          <Route
+            path="/login/oauth2/callback/kakao" //redirect_url
+            element={<LoginHandeler />} //당신이 redirect_url에 맞춰 꾸밀 컴포넌트
+          />
         </Routes>
       </Router>
     </div >

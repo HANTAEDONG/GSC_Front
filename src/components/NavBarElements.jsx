@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Navbar, Container, Nav, NavDropdown, Button, Modal } from 'react-bootstrap';
-import LoginModal from './LoginModal';
 
 const NavbarCompoenents = () => {
     const [show, setShow] = useState(false);
